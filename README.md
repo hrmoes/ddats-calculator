@@ -1,0 +1,149 @@
+# D-DATS Calculator
+
+**Dutch Device-Aided Therapy Screening Tool**
+
+Web-based screening tool for identifying Parkinson's disease patients eligible for referral to expert centers for device-aided therapy (DAT) evaluation.
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![TRIPOD: Type 2b](https://img.shields.io/badge/TRIPOD-Type%202b%20Validation-green.svg)](https://www.tripod-statement.org/)
+
+---
+
+## Live Tool
+
+**🔗 [Open D-DATS Calculator](https://yourusername.github.io/ddats-calculator)**
+
+Bilingual interface (Dutch/English) with integrated LEDD calculator.
+
+---
+
+## Validation
+
+**External validation in Dutch secondary care cohort:**
+- Sample: 164 consecutive Parkinson patients, 4 hospitals
+- Reference standard: Expert panel of 5 Dutch movement disorder specialists
+- **AUROC: 0.93** (95% CI: 0.89-0.97)
+- **Sensitivity: 81%** | **Specificity: 92%** (at cutoff 5.8)
+
+
+**Citation:**  
+Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models for assessing eligibility for referral for Device-Aided Treatment in Parkinson's disease (VALIDATE). *Parkinsonism & Related Disorders*, 127(S1), Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
+
+*Full manuscript in preparation.*
+
+---
+
+## How It Works
+
+**Model predictors (n=3):**
+1. LEDD (Levodopa Equivalent Daily Dose) - continuous
+2. Response fluctuations - yes/no
+3. Troublesome dyskinesias - yes/no
+
+**Formula:** `D-DATS = (LEDD × 0.003) + (Fluctuations × 2.0) + (Dyskinesias × 2.0)`
+
+**Interpretation:**
+- Score **≥5.8**: Consider referral to DAT expert center for evaluation
+- Score **<5.8**: No indication for referral
+
+---
+
+## Clinical Use
+
+**Target population:**
+- Idiopathic Parkinson's disease (DAT-naive)
+- Oral/transdermal medication optimized per guidelines
+- Secondary care setting
+
+**Important limitation:**  
+Tool is likely insufficiently sensitive for patients with therapy-resistant tremor. DBS may be indicated in these patients regardless of score.
+
+**Full scope and contraindications:** See medical disclaimer in tool.
+
+---
+
+## Features
+
+- ✅ Single-page application (no installation needed)
+- ✅ Client-side processing (GDPR-compliant, no data transmission)
+- ✅ Bilingual interface (Dutch/English)
+- ✅ Integrated LEDD calculator (Jost et al. 2023 conversions)
+- ✅ Export function for medical records
+- ✅ Mobile-responsive design
+
+---
+
+## Local Use
+
+Download `index.html` and `favicon.svg`, open in any modern browser.
+
+```bash
+# Optional: Run local server for testing
+python3 -m http.server 8000
+```
+
+No dependencies required.
+
+---
+
+## LEDD Conversions
+
+Calculator uses Jost et al. (2023) conversion factors:
+
+| Medication | Factor | Example |
+|------------|--------|---------|
+| Levodopa IR | 1.0× | 100 mg → 100 LEDD |
+| Levodopa CR | 0.75× | 100 mg → 75 LEDD |
+| Pramipexole base | 100× | 1 mg → 100 LEDD |
+| Ropinirole | 33.3× | 6 mg → 200 LEDD |
+| Rotigotine | 25× | 8 mg → 200 LEDD |
+
+Full conversion table available in calculator interface.
+
+---
+
+## Known Limitations
+
+1. Validated in Dutch secondary care only
+2. Not sensitive for therapy-resistant tremor
+3. Assumes medication optimization per current guidelines
+4. Does not predict treatment outcomes
+5. Does not replace comprehensive clinical assessment
+
+See [full documentation](LICENSE) for complete scope and limitations.
+
+---
+
+## References
+
+1. Moes, H.R., Ten Kate, J.M., Portman, A.T., et al. (2023). Timely referral for device-aided therapy in Parkinson's disease: Development of a screening tool. *Parkinsonism & Related Disorders*, 109, 105359.
+
+2. Jost, S.T., Kaldenbach, M.A., Antonini, A., et al. (2023). Levodopa dose equivalency in Parkinson's disease: Updated systematic review. *Movement Disorders*, 38, 1236-1252.
+
+3. Odish, O., & de Waard, D. (2024). When and how to refer patients for DBS. In: *Learning Deep Brain Stimulation Management through Clinical Cases*. Elsevier.
+
+---
+
+## License & Citation
+
+**Copyright:** © 2025 H.R. Moes, MD, University of Groningen, UMCG  
+**License:** [CC BY 4.0](LICENSE) - Free to use with attribution
+
+**How to cite:**
+```
+Moes, H.R., et al. (2025). External validation of the Dutch Device-Aided Therapy Screening tool (D-DATS) for Parkinson's disease. [Manuscript in preparation]
+```
+
+---
+
+## Contact
+
+**Developer:** H.R. Moes, MD
+**Institution:** Department of Neurology, University Medical Center Groningen  
+**Email:** h.r.moes@umcg.nl
+
+For clinical questions, validation inquiries, or technical issues.
+
+---
+
+**Disclaimer:** For use by qualified healthcare professionals only. Does not replace clinical judgment. Treating physician remains responsible for all decisions.

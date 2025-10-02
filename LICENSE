@@ -1,0 +1,152 @@
+D-DATS CALCULATOR - LICENSE
+
+Copyright (c) 2025 H.R. Moes, MD
+Department of Neurology
+University Medical Center Groningen
+Groningen, The Netherlands
+
+Contact: h.r.moes@umcg.nl
+
+================================================================================
+
+SCIENTIFIC BASIS
+
+This calculator implements the D-DATS (Dutch Device-Aided Therapy Screening) 
+tool, based on:
+
+Development:
+Moes, H.R., et al. (2023). Development of the D-DATS screening tool. 
+Parkinsonism & Related Disorders, 109, 105359.
+
+External Validation:
+Moes, H.R., et al. (2025). External validation of the D-DATS screening tool. 
+[In press]
+
+Validation metrics:
+- AUROC: 0.93 (95% CI: 0.89-0.97)
+- Sensitivity: 81% | Specificity: 92% (at cutoff 5.8)
+- Cohort: 164 Parkinson's disease patients, 4 Dutch hospitals
+- Reference standard: Expert panel of 5 Dutch movement disorder specialists
+
+LEDD conversions:
+Jost, S.T., et al. (2023). Levodopa Equivalent Dose Calculations in 
+Parkinson's Disease. Movement Disorders, 38, 1236-1252.
+
+================================================================================
+
+LICENSE
+
+This work is licensed under the Creative Commons Attribution 4.0 
+International License (CC BY 4.0).
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+
+YOU ARE FREE TO:
+
+  • Share — copy and redistribute in any medium or format for any purpose,
+    including commercial use
+    
+  • Adapt — remix, transform, and build upon the material for any purpose,
+    including commercial use
+
+
+UNDER THE FOLLOWING TERMS:
+
+  • Attribution — You must give appropriate credit, provide a link to the 
+    license, and indicate if changes were made. Credit format:
+    
+    "Based on D-DATS Calculator by H.R. Moes, MD (UMCG), licensed under 
+    CC BY 4.0"
+    
+  • No additional restrictions — You may not apply legal terms or 
+    technological measures that legally restrict others from doing anything 
+    the license permits
+
+
+ATTRIBUTION REQUIREMENTS:
+
+When using this tool in publications, please cite:
+
+  Moes, H.R., et al. (2025). External validation of the Dutch Device-Aided 
+  Therapy Screening tool (D-DATS) for identification of Parkinson patients 
+  eligible for device-aided therapy referral. [Journal/DOI to be added]
+
+
+TRADEMARK NOTICE:
+
+Sinemet®, Madopar®, and Stalevo® are registered trademarks of their 
+respective manufacturers and are used in this tool for informational 
+purposes only.
+
+================================================================================
+
+DISCLAIMER
+
+This software is provided "as is" without warranty of any kind, express or 
+implied, including but not limited to warranties of merchantability, fitness 
+for a particular purpose, and noninfringement.
+
+The authors and University Medical Center Groningen shall not be liable for 
+any claim, damages, or other liability arising from the use of this software.
+
+MEDICAL DISCLAIMER:
+
+This tool is intended for use by qualified healthcare professionals only as 
+a clinical decision support aid. It does not:
+
+  • Replace clinical judgment or comprehensive patient assessment
+  • Generate diagnoses
+  • Provide treatment recommendations beyond referral screening
+  • Account for patient-specific contraindications or preferences
+
+The treating physician remains solely responsible for all clinical decisions.
+
+SCOPE OF APPLICATION:
+
+This tool is developed and validated for use in secondary care settings for 
+patients diagnosed with idiopathic Parkinson disease who have not previously 
+been treated with a device-aided therapy (DAT) and in whom oral and 
+transdermal treatment is conducted according to current guidelines (including 
+dose fractionation and, where indicated, use of dopamine agonists, MAO-B 
+inhibitors, COMT inhibitors and/or amantadine).
+
+IMPORTANT LIMITATION:
+
+This tool is likely insufficiently sensitive for patients with therapy-
+resistant tremor for whom deep brain stimulation (DBS) may be considered 
+regardless of the score.
+
+================================================================================
+
+VERSION HISTORY
+
+Version 2.0 - January 2025
+  • External validation implementation
+  • Bilingual interface (Dutch/English)
+  • Integrated LEDD calculator (Jost et al. 2023 conversions)
+  • Updated COMT inhibitor handling
+  • Privacy-compliant analytics (Umami)
+  • Expanded scope of application and limitations
+
+Version 1.0 - 2024
+  • Development study implementation
+  • Manual LEDD input only
+
+================================================================================
+
+PRIVACY & DATA PROTECTION
+
+This calculator processes all data client-side in the user's browser. No 
+patient data is transmitted to external servers or stored. Optional analytics 
+(Umami) collect only aggregate, anonymous usage statistics in compliance with 
+GDPR Article 6(1)(f) - no cookies or personal identifiers.
+
+================================================================================
+
+For questions, collaboration inquiries, or to report issues:
+
+Dr. H.R. Moes
+Department of Neurology
+University Medical Center Groningen
+Email: h.r.moes@umcg.nl
