@@ -11,7 +11,7 @@ Web-based screening tool for identifying Parkinson's disease patients eligible f
 
 ## Live Tool
 
-**🔗 [Open D-DATS Calculator](https://yourusername.github.io/ddats-calculator)**
+**🔗 [Open D-DATS Calculator](https://hrmoes.github.io/ddats-calculator)**
 
 Bilingual interface (Dutch/English) with integrated LEDD calculator.
 
