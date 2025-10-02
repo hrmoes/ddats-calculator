@@ -501,8 +501,8 @@
     <div class="container">
         <div class="header">
             <div class="language-toggle">
-                <div class="lang-btn active" onclick="setLanguage('nl')">NL</div>
-                <div class="lang-btn" onclick="setLanguage('en')">EN</div>
+                <div class="lang-btn" id="lang-nl" onclick="setLanguage('nl')">NL</div>
+                <div class="lang-btn" id="lang-en" onclick="setLanguage('en')">EN</div>
             </div>
             
             <div class="logo-container">
@@ -895,11 +895,12 @@
         function setLanguage(lang) {
             currentLanguage = lang;
             
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            event.target.classList.add('active');
+            // Update active button
+            document.getElementById('lang-nl').classList.remove('active');
+            document.getElementById('lang-en').classList.remove('active');
+            document.getElementById('lang-' + lang).classList.add('active');
             
+            // Update all text elements
             Object.keys(translations[lang]).forEach(key => {
                 const elements = document.querySelectorAll('.' + key);
                 elements.forEach(el => {
@@ -911,8 +912,10 @@
                 });
             });
             
+            // Re-render medications with new language
             renderMedications();
             
+            // Update interpretation
             const ledd = parseFloat(document.getElementById('ledd-input').value) || 0;
             const fluctuations = document.querySelector('input[name="fluctuations"]:checked').value === 'yes';
             const dyskinesias = document.querySelector('input[name="dyskinesias"]:checked').value === 'yes';
@@ -1131,7 +1134,9 @@ ${lang === 'nl' ? 'Externe validatie: 164 patiënten, sensitiviteit 81%, specifi
             });
         }
 
+        // Initialize on page load
         calculateDDATS();
+        setLanguage(currentLanguage);  // This is the critical fix - initialize with detected language
     </script>
 </body>
 </html>
