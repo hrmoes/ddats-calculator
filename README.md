@@ -75,14 +75,7 @@ Tool is likely insufficiently sensitive for patients with therapy-resistant trem
 
 ## Local Use
 
-Download `index.html` and `favicon.svg`, open in any modern browser.
-
-```bash
-# Optional: Run local server for testing
-python3 -m http.server 8000
-```
-
-No dependencies required.
+Download `index.html` and `favicon.svg`, open in any modern browser. No installation or dependencies required.
 
 ---
 
@@ -120,7 +113,11 @@ See [full documentation](LICENSE) for complete scope and limitations.
 
 2. Jost, S.T., Kaldenbach, M.A., Antonini, A., et al. (2023). Levodopa dose equivalency in Parkinson's disease: Updated systematic review. *Movement Disorders*, 38, 1236-1252.
 
-3. Odish, O., & de Waard, D. (2024). When and how to refer patients for DBS. In: *Learning Deep Brain Stimulation Management through Clinical Cases*. Elsevier.
+3. Moes, H.R., Henriksen, T., Sławek,  J., et al. (2023). Tools and criteria to select patients with advanced Parkinson's disease for device-aided therapies: a narrative review. *Journal of Neural Transmission*, 130(11), 1359-1377.
+
+4. Moes, H.R., Dafsar, H.S., Jost, W.H., et al. (2024). Grasping the big picture: impact analysis of screening tools for timely referral for device-aided therapies. *Journal of Neural Transmission*, 131(11), 1295-1305.
+
+5. Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models for assessing eligibility for referral for Device-Aided Treatment in Parkinson's disease (VALIDATE). *Parkinsonism & Related Disorders*, 127(S1), Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
 
 ---
 
@@ -129,16 +126,19 @@ See [full documentation](LICENSE) for complete scope and limitations.
 **Copyright:** © 2025 H.R. Moes, MD, University of Groningen, UMCG  
 **License:** [CC BY 4.0](LICENSE) - Free to use with attribution
 
-**How to cite:**
+**How to cite this tool:**
 ```
-Moes, H.R., et al. (2025). External validation of the Dutch Device-Aided Therapy Screening tool (D-DATS) for Parkinson's disease. [Manuscript in preparation]
+Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models 
+for assessing eligibility for referral for Device-Aided Treatment in 
+Parkinson's disease (VALIDATE). Parkinsonism & Related Disorders, 127(S1), 
+Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
 ```
 
 ---
 
 ## Contact
 
-**Developer:** H.R. Moes, MD
+**Developer:** H.R. Moes, MD  
 **Institution:** Department of Neurology, University Medical Center Groningen  
 **Email:** h.r.moes@umcg.nl
 
