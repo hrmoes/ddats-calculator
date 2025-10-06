@@ -131,7 +131,7 @@ See [full documentation](LICENSE) for complete scope and limitations.
 Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models 
 for assessing eligibility for referral for Device-Aided Treatment in 
 Parkinson's disease (VALIDATE). Parkinsonism & Related Disorders, 127(S1), 
-Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
+Abstract 493. [https://doi.org/10.1016/j.parkreldis.2024.107059](https://www.prd-journal.com/article/S1353-8020(24)00129-9/abstract)
 ```
 
 ---
