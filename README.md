@@ -117,7 +117,7 @@ See [full documentation](LICENSE) for complete scope and limitations.
 
 4. Moes, H.R., Dafsar, H.S., Jost, W.H., et al. (2024). Grasping the big picture: impact analysis of screening tools for timely referral for device-aided therapies. *Journal of Neural Transmission*, 131(11), 1295-1305.
 
-5. Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models for assessing eligibility for referral for Device-Aided Treatment in Parkinson's disease (VALIDATE). *Parkinsonism & Related Disorders*, 127(S1), Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
+5. Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models for assessing eligibility for referral for Device-Aided Treatment in Parkinson's disease (VALIDATE). *Parkinsonism & Related Disorders*, 127(S1), Abstract 493. [https://www.prd-journal.com/article/S1353-8020(24)00129-9/abstract]
 
 ---
 
@@ -131,7 +131,7 @@ See [full documentation](LICENSE) for complete scope and limitations.
 Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models 
 for assessing eligibility for referral for Device-Aided Treatment in 
 Parkinson's disease (VALIDATE). Parkinsonism & Related Disorders, 127(S1), 
-Abstract 493. [https://doi.org/10.1016/j.parkreldis.2024.107059](https://www.prd-journal.com/article/S1353-8020(24)00129-9/abstract)
+Abstract 493. [https://www.prd-journal.com/article/S1353-8020(24)00129-9/abstract]
 ```
 
 ---
