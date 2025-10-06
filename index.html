@@ -244,6 +244,21 @@
             line-height: 1.4;
         }
         
+        @media (max-width: 640px) {
+            .tooltip {
+                left: auto;
+                right: 0;
+                transform: none;
+                max-width: calc(100vw - 40px);
+            }
+            
+            .tooltip:before {
+                left: auto;
+                right: 10px;
+                transform: none;
+            }
+        }
+        
         .tooltip:before {
             content: '';
             position: absolute;
