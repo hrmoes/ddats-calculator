@@ -11,18 +11,18 @@ Contact: h.r.moes@umcg.nl
 
 SCIENTIFIC BASIS
 
-This calculator implements the D-DATS (Dutch Device-Aided Therapy Screening) 
+This calculator implements the D-DATS (Dutch Device-Aided Therapy Screening)
 tool, based on:
 
 Development:
-Moes, H.R., et al. (2023). Development of the D-DATS screening tool. 
+Moes, H.R., et al. (2023). Development of the D-DATS screening tool.
 Parkinsonism & Related Disorders, 109, 105359.
 
 External Validation:
-Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models 
-for assessing eligibility for referral for Device-Aided Treatment in 
-Parkinson's disease (VALIDATE). Parkinsonism & Related Disorders, 127(S1), 
-Abstract 493. https://www.prd-journal.com/article/S1353-8020(24)00129-9/abstract
+Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models
+for assessing eligibility for referral for Device-Aided Treatment in
+Parkinson's disease (VALIDATE). Parkinsonism & Related Disorders, 127(S1),
+Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
 (Full manuscript in preparation)
 
 Validation metrics:
@@ -32,38 +32,47 @@ Validation metrics:
 - Reference standard: Expert panel of 5 Dutch movement disorder specialists
 
 LEDD conversions:
-Jost, S.T., et al. (2023). Levodopa Equivalent Dose Calculations in 
+Jost, S.T., et al. (2023). Levodopa Equivalent Dose Calculations in
 Parkinson's Disease. Movement Disorders, 38, 1236-1252.
 
 ================================================================================
 
 LICENSE
 
-This work is licensed under the Creative Commons Attribution 4.0 
-International License (CC BY 4.0).
+This work is licensed under the Creative Commons Attribution-NonCommercial-
+NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
 
-Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Full license text: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 
 
 YOU ARE FREE TO:
 
-  • Share — copy and redistribute in any medium or format for any purpose,
-    including commercial use
-    
-  • Adapt — remix, transform, and build upon the material for any purpose,
-    including commercial use
+  • Share — copy and redistribute the material in any medium or format for
+    non-commercial purposes only
 
 
 UNDER THE FOLLOWING TERMS:
 
-  • Attribution — You must give appropriate credit, provide a link to the 
+  • Attribution — You must give appropriate credit, provide a link to the
     license, and indicate if changes were made. Credit format:
-    
-    "Based on D-DATS Calculator by H.R. Moes, MD (UMCG), licensed under 
-    CC BY 4.0"
-    
-  • No additional restrictions — You may not apply legal terms or 
-    technological measures that legally restrict others from doing anything 
+
+    "D-DATS Calculator by H.R. Moes, MD (UMCG), licensed under CC BY-NC-ND 4.0"
+
+  • NonCommercial — You may not use the material for commercial purposes.
+    This includes, but is not limited to:
+    - Integration into commercial products or services
+    - Use in pharmaceutical marketing or promotional materials
+    - Commercial distribution or licensing
+    - Use in fee-based consulting services
+
+    For commercial licensing inquiries, contact: h.r.moes@umcg.nl
+
+  • NoDerivatives — If you remix, transform, or build upon the material, you
+    may not distribute the modified material. The tool must be used in its
+    original, validated form to maintain scientific integrity.
+
+  • No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing anything
     the license permits
 
 
@@ -71,32 +80,52 @@ ATTRIBUTION REQUIREMENTS:
 
 When using this tool in publications, please cite the validation study:
 
-  Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models 
-  for assessing eligibility for referral for Device-Aided Treatment in 
-  Parkinson's disease (VALIDATE). Parkinsonism & Related Disorders, 127(S1), 
-  Abstract 493. https://www.prd-journal.com/article/S1353-8020(24)00129-9/abstract
+  Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models
+  for assessing eligibility for referral for Device-Aided Treatment in
+  Parkinson's disease (VALIDATE). Parkinsonism & Related Disorders, 127(S1),
+  Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
+
+
+PERMITTED USES:
+
+This tool may be freely used for:
+  • Clinical care in non-commercial healthcare settings
+  • Academic research and education
+  • Non-profit medical education programs
+  • Internal use in public healthcare institutions
+
+
+PROHIBITED USES:
+
+  • Commercial exploitation by pharmaceutical companies or other for-profit
+    entities
+  • Integration into commercial clinical decision support systems without
+    explicit written permission
+  • Modification or creation of derivative works
+  • Use in marketing, advertising, or promotional materials
+  • Misrepresentation of ownership or authorship
 
 
 TRADEMARK NOTICE:
 
-Sinemet®, Madopar®, and Stalevo® are registered trademarks of their 
-respective manufacturers and are used in this tool for informational 
+Sinemet®, Madopar®, and Stalevo® are registered trademarks of their
+respective manufacturers and are used in this tool for informational
 purposes only.
 
 ================================================================================
 
 DISCLAIMER
 
-This software is provided "as is" without warranty of any kind, express or 
-implied, including but not limited to warranties of merchantability, fitness 
+This software is provided "as is" without warranty of any kind, express or
+implied, including but not limited to warranties of merchantability, fitness
 for a particular purpose, and noninfringement.
 
-The authors and University Medical Center Groningen shall not be liable for 
+The authors and University Medical Center Groningen shall not be liable for
 any claim, damages, or other liability arising from the use of this software.
 
 MEDICAL DISCLAIMER:
 
-This tool is intended for use by qualified healthcare professionals only as 
+This tool is intended for use by qualified healthcare professionals only as
 a clinical decision support aid. It does not:
 
   • Replace clinical judgment or comprehensive patient assessment
@@ -108,17 +137,17 @@ The treating physician remains solely responsible for all clinical decisions.
 
 SCOPE OF APPLICATION:
 
-This tool is developed and validated for use in secondary care settings for 
-patients diagnosed with idiopathic Parkinson disease who have not previously 
-been treated with a device-aided therapy (DAT) and in whom oral and 
-transdermal treatment is conducted according to current guidelines (including 
-dose fractionation and, where indicated, use of dopamine agonists, MAO-B 
+This tool is developed and validated for use in secondary care settings for
+patients diagnosed with idiopathic Parkinson disease who have not previously
+been treated with a device-aided therapy (DAT) and in whom oral and
+transdermal treatment is conducted according to current guidelines (including
+dose fractionation and, where indicated, use of dopamine agonists, MAO-B
 inhibitors, COMT inhibitors and/or amantadine).
 
 IMPORTANT LIMITATION:
 
 This tool is likely insufficiently sensitive for patients with therapy-
-resistant tremor for whom deep brain stimulation (DBS) may be considered 
+resistant tremor for whom deep brain stimulation (DBS) may be considered
 regardless of the score.
 
 ================================================================================
@@ -131,20 +160,20 @@ Version 1.0 - October 2025
   • Integrated LEDD calculator (Jost et al. 2023 conversions)
   • Updated COMT inhibitor handling
   • Privacy-compliant analytics (Umami)
-  • Expanded scope of application and limitations
+  • Comprehensive medical disclaimer and scope of application
 
 ================================================================================
 
 PRIVACY & DATA PROTECTION
 
-This calculator processes all data client-side in the user's browser. No 
-patient data is transmitted to external servers or stored. Optional analytics 
-(Umami) collect only aggregate, anonymous usage statistics in compliance with 
+This calculator processes all data client-side in the user's browser. No
+patient data is transmitted to external servers or stored. Optional analytics
+(Umami) collect only aggregate, anonymous usage statistics in compliance with
 GDPR Article 6(1)(f) - no cookies or personal identifiers.
 
 ================================================================================
 
-For questions, collaboration inquiries, or to report issues:
+For questions, collaboration inquiries, or commercial licensing requests:
 
 H.R. Moes, MD
 Department of Neurology
