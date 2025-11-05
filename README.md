@@ -4,7 +4,7 @@
 
 Web-based screening tool for identifying Parkinson's disease patients eligible for referral to expert centers for device-aided therapy (DAT) evaluation.
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![TRIPOD: Type 2b](https://img.shields.io/badge/TRIPOD-Type%202b%20Validation-green.svg)](https://www.tripod-statement.org/)
 
 ---
@@ -117,21 +117,21 @@ See [full documentation](LICENSE) for complete scope and limitations.
 
 4. Moes, H.R., Dafsar, H.S., Jost, W.H., et al. (2024). Grasping the big picture: impact analysis of screening tools for timely referral for device-aided therapies. *Journal of Neural Transmission*, 131(11), 1295-1305.
 
-5. Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models for assessing eligibility for referral for Device-Aided Treatment in Parkinson's disease (VALIDATE). *Parkinsonism & Related Disorders*, 127(S1), Abstract 493. [https://www.prd-journal.com/article/S1353-8020(24)00129-9/abstract]
+5. Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models for assessing eligibility for referral for Device-Aided Treatment in Parkinson's disease (VALIDATE). *Parkinsonism & Related Disorders*, 127(S1), Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
 
 ---
 
 ## License & Citation
 
-**Copyright:** © 2025 H.R. Moes, MD, University of Groningen, UMCG  
-**License:** [CC BY 4.0](LICENSE) - Free to use with attribution
+**Copyright:** © 2025 H.R. Moes, MD, University of Groningen, UMCG
+**License:** [CC BY-NC-ND 4.0](LICENSE) - Free for non-commercial use with attribution
 
 **How to cite this tool:**
 ```
 Moes, H.R., Buskens, E., Portman, A., et al. (2024). VALIdation of models 
 for assessing eligibility for referral for Device-Aided Treatment in 
 Parkinson's disease (VALIDATE). Parkinsonism & Related Disorders, 127(S1), 
-Abstract 493. [https://www.prd-journal.com/article/S1353-8020(24)00129-9/abstract]
+Abstract 493. https://doi.org/10.1016/j.parkreldis.2024.107059
 ```
 
 ---
