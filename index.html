@@ -3,21 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="H.R. Moes, UMCG">
-    <meta name="description" content="D-DATS Calculator - validated screening tool for device-aided therapy referral in Parkinson's disease">
+    <meta name="author" content="H.R. Moes, MD">
+    <meta name="description" content="D-DATS: externally validated screening tool for identifying Parkinson's disease patients eligible for referral for device-aided therapy. AUROC 0.93, sensitivity 88%, specificity 90%, cutoff 5.8. Independent academic tool, CC BY-NC-ND 4.0.">
+    <meta name="keywords" content="D-DATS, Parkinson, device-aided therapy, DAT, DBS, deep brain stimulation, apomorphine, levodopa intestinal gel, LEDD calculator, screening tool, referral, neurology">
     <meta name="citation_title" content="External validation of the D-DATS screening tool">
     <meta name="citation_author" content="Moes, H.R.">
     <meta name="citation_publication_date" content="2025">
-    
-    <title>D-DATS Calculator</title>
-    
+
+    <title>D-DATS | Validated Parkinson Screening Tool for Device-Aided Therapy</title>
+    <link rel="canonical" href="https://ddats.nl/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="D-DATS">
+    <meta property="og:title" content="D-DATS | Validated Parkinson Screening Tool">
+    <meta property="og:description" content="Externally validated screening tool (AUROC 0.93) for identifying PD patients eligible for referral for device-aided therapy. Independent academic tool under CC BY-NC-ND 4.0.">
+    <meta property="og:url" content="https://ddats.nl/">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://ddats.nl/favicon.svg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="D-DATS | Parkinson Screening Tool">
+    <meta name="twitter:description" content="Validated screening tool for device-aided therapy referral in Parkinson's disease. AUROC 0.93.">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalWebPage",
+          "@id": "https://ddats.nl/#webpage",
+          "url": "https://ddats.nl/",
+          "name": "D-DATS | Dutch Device-Aided Therapy Screening Tool",
+          "description": "Externally validated screening tool for identifying Parkinson's disease patients eligible for referral for device-aided therapy.",
+          "inLanguage": ["nl", "en"],
+          "audience": {
+            "@type": "MedicalAudience",
+            "audienceType": "Physicians"
+          },
+          "about": {
+            "@type": "MedicalCondition",
+            "name": "Parkinson's disease",
+            "code": {
+              "@type": "MedicalCode",
+              "codeValue": "G20",
+              "codingSystem": "ICD-10"
+            }
+          },
+          "lastReviewed": "2026-04-18"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "D-DATS Calculator",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "Any (web browser)",
+          "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+          "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "author": {
+            "@type": "Person",
+            "name": "H.R. Moes",
+            "affiliation": {
+              "@type": "Organization",
+              "name": "University Medical Center Groningen"
+            }
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
-    
+
     <script defer src="https://cloud.umami.is/script.js" data-website-id="eed2497d-22d9-44bc-acac-98f75dd4fead"></script>
     
     <style>
@@ -673,7 +737,7 @@
                             
                             <strong>Toepassingsgebied:</strong> Deze tool is ontwikkeld en gevalideerd voor toepassing in de tweedelijnszorg bij patiënten met de diagnose idiopathische ziekte van Parkinson die nog niet eerder met een DAT zijn behandeld en bij wie de orale en transdermale behandeling geschiedt volgens geldende richtlijnen (waaronder dosisfractionering en indien geïndiceerd toepassen van dopamine-agonisten, MAO-B-remmers, COMT-remmers en/of amantadine). <strong>Let op:</strong> deze tool is waarschijnlijk onvoldoende sensitief voor patiënten met therapie-resistente tremor bij wie DBS overwogen kan worden ongeacht de score.<br><br>
                             
-                            <strong>Validatie:</strong> D-DATS is extern gevalideerd in een Nederlands cohort van 164 Parkinson patiënten met een expertpanel van vijf Nederlandse bewegingsstoornisspecialisten als referentiestandaard (AUROC 0.93, 95% CI: 0.89-0.97) met een sensitiviteit van 81% en specificiteit van 92% bij cutoff 5.8.<br><br>
+                            <strong>Validatie:</strong> D-DATS is extern gevalideerd in een Nederlands cohort van 164 Parkinson patiënten met een expertpanel van vijf Nederlandse bewegingsstoornisspecialisten als referentiestandaard (AUROC 0.93, 95% CI: 0.89-0.96) met een sensitiviteit van 88%, specificiteit van 90% en positief voorspellende waarde van 61% bij cutoff 5.8.<br><br>
                             
                             <strong>LEDD berekening:</strong> Levodopa equivalent daily dose (LEDD) conversie volgens Jost et al. (2023). Bij combinatiepreparaten (levodopa/carbidopa, levodopa/benserazide, of Stalevo®) uitsluitend de levodopa-component invoeren.<br><br>
                             
@@ -751,7 +815,7 @@
                 'text-dyskinesias-component': 'Hinderlijke dyskinesieën',
                 'text-total-component': 'Totaal',
                 'text-disclaimer-title': 'Medische disclaimer',
-                'text-disclaimer-content': '<strong>Let op:</strong> D-DATS (Dutch Device-Aided Therapy Screening) is een predictietool ter ondersteuning van klinische besluitvorming door medisch specialisten. De tool identificeert Parkinson patiënten die mogelijk geschikt zijn voor <strong>verwijzing</strong> naar een expertisecentrum op het gebied van DAT. Daar wordt beoordeeld of een DAT een passende behandeling is voor de patiënt. De tool dient niet als vervanging voor professioneel medisch oordeel en klinische expertise.<br><br><strong>Toepassingsgebied:</strong> Deze tool is ontwikkeld en gevalideerd voor toepassing in de tweedelijnszorg bij patiënten met de diagnose idiopathische ziekte van Parkinson die nog niet eerder met een DAT zijn behandeld en bij wie de orale en transdermale behandeling geschiedt volgens geldende richtlijnen (waaronder dosisfractionering en indien geïndiceerd toepassen van dopamine-agonisten, MAO-B-remmers, COMT-remmers en/of amantadine). <strong>Let op:</strong> deze tool is waarschijnlijk onvoldoende sensitief voor patiënten met therapie-resistente tremor bij wie DBS overwogen kan worden ongeacht de score.<br><br><strong>Validatie:</strong> D-DATS is extern gevalideerd in een Nederlands cohort van 164 Parkinson patiënten met een expertpanel van vijf Nederlandse bewegingsstoornisspecialisten als referentiestandaard (AUROC 0.93, 95% CI: 0.89-0.97) met een sensitiviteit van 81% en specificiteit van 92% bij cutoff 5.8.<br><br><strong>LEDD berekening:</strong> Levodopa equivalent daily dose (LEDD) conversie volgens Jost et al. (2023). Bij combinatiepreparaten (levodopa/carbidopa, levodopa/benserazide, of Stalevo®) uitsluitend de levodopa-component invoeren.<br><br><strong>Verantwoordelijkheid:</strong> De behandelend arts blijft te allen tijde eindverantwoordelijk voor alle klinische beslissingen. Deze tool genereert geen diagnoses en vervangt geen medisch onderzoek.',
+                'text-disclaimer-content': '<strong>Let op:</strong> D-DATS (Dutch Device-Aided Therapy Screening) is een predictietool ter ondersteuning van klinische besluitvorming door medisch specialisten. De tool identificeert Parkinson patiënten die mogelijk geschikt zijn voor <strong>verwijzing</strong> naar een expertisecentrum op het gebied van DAT. Daar wordt beoordeeld of een DAT een passende behandeling is voor de patiënt. De tool dient niet als vervanging voor professioneel medisch oordeel en klinische expertise.<br><br><strong>Toepassingsgebied:</strong> Deze tool is ontwikkeld en gevalideerd voor toepassing in de tweedelijnszorg bij patiënten met de diagnose idiopathische ziekte van Parkinson die nog niet eerder met een DAT zijn behandeld en bij wie de orale en transdermale behandeling geschiedt volgens geldende richtlijnen (waaronder dosisfractionering en indien geïndiceerd toepassen van dopamine-agonisten, MAO-B-remmers, COMT-remmers en/of amantadine). <strong>Let op:</strong> deze tool is waarschijnlijk onvoldoende sensitief voor patiënten met therapie-resistente tremor bij wie DBS overwogen kan worden ongeacht de score.<br><br><strong>Validatie:</strong> D-DATS is extern gevalideerd in een Nederlands cohort van 164 Parkinson patiënten met een expertpanel van vijf Nederlandse bewegingsstoornisspecialisten als referentiestandaard (AUROC 0.93, 95% CI: 0.89-0.96) met een sensitiviteit van 88%, specificiteit van 90% en positief voorspellende waarde van 61% bij cutoff 5.8.<br><br><strong>LEDD berekening:</strong> Levodopa equivalent daily dose (LEDD) conversie volgens Jost et al. (2023). Bij combinatiepreparaten (levodopa/carbidopa, levodopa/benserazide, of Stalevo®) uitsluitend de levodopa-component invoeren.<br><br><strong>Verantwoordelijkheid:</strong> De behandelend arts blijft te allen tijde eindverantwoordelijk voor alle klinische beslissingen. Deze tool genereert geen diagnoses en vervangt geen medisch onderzoek.',
                 'text-export-epd': 'Kopieer resultaat',
                 'text-copy-clipboard': 'Kopieer naar klembord',
                 'text-copied': '✓ Gekopieerd naar klembord!',
@@ -786,7 +850,7 @@
                 'text-dyskinesias-component': 'Troublesome dyskinesias',
                 'text-total-component': 'Total',
                 'text-disclaimer-title': 'Medical disclaimer',
-                'text-disclaimer-content': '<strong>Notice:</strong> D-DATS (Dutch Device-Aided Therapy Screening) is a prediction tool to support clinical decision-making by medical specialists. The tool identifies Parkinson patients who may be eligible for <strong>referral</strong> to an expert center in the field of DAT. There, it is assessed whether a DAT is an appropriate treatment for the patient. This tool does not replace professional medical judgment and clinical expertise.<br><br><strong>Scope of application:</strong> This tool has been developed and validated for use in secondary care settings for patients diagnosed with idiopathic Parkinson disease who have not previously been treated with a DAT and in whom oral and transdermal treatment is conducted according to current guidelines (including dose fractionation and, where indicated, use of dopamine agonists, MAO-B inhibitors, COMT inhibitors and/or amantadine). <strong>Note:</strong> this tool is likely insufficiently sensitive for patients with therapy-resistant tremor for whom DBS may be considered regardless of the score.<br><br><strong>Validation:</strong> D-DATS has been externally validated in a Dutch cohort of 164 Parkinson patients with an expert panel of five Dutch movement disorder specialists as reference standard (AUROC 0.93, 95% CI: 0.89-0.97) with sensitivity of 81% and specificity of 92% at cutoff 5.8.<br><br><strong>LEDD calculation:</strong> Levodopa equivalent daily dose (LEDD) conversion according to Jost et al. (2023). For combination preparations (levodopa/carbidopa, levodopa/benserazide, or Stalevo®), enter only the levodopa component.<br><br><strong>Responsibility:</strong> The treating physician remains ultimately responsible for all clinical decisions at all times. This tool does not generate diagnoses and does not replace medical examination.',
+                'text-disclaimer-content': '<strong>Notice:</strong> D-DATS (Dutch Device-Aided Therapy Screening) is a prediction tool to support clinical decision-making by medical specialists. The tool identifies Parkinson patients who may be eligible for <strong>referral</strong> to an expert center in the field of DAT. There, it is assessed whether a DAT is an appropriate treatment for the patient. This tool does not replace professional medical judgment and clinical expertise.<br><br><strong>Scope of application:</strong> This tool has been developed and validated for use in secondary care settings for patients diagnosed with idiopathic Parkinson disease who have not previously been treated with a DAT and in whom oral and transdermal treatment is conducted according to current guidelines (including dose fractionation and, where indicated, use of dopamine agonists, MAO-B inhibitors, COMT inhibitors and/or amantadine). <strong>Note:</strong> this tool is likely insufficiently sensitive for patients with therapy-resistant tremor for whom DBS may be considered regardless of the score.<br><br><strong>Validation:</strong> D-DATS has been externally validated in a Dutch cohort of 164 Parkinson patients with an expert panel of five Dutch movement disorder specialists as reference standard (AUROC 0.93, 95% CI: 0.89-0.96) with sensitivity of 88%, specificity of 90%, and positive predictive value of 61% at cutoff 5.8.<br><br><strong>LEDD calculation:</strong> Levodopa equivalent daily dose (LEDD) conversion according to Jost et al. (2023). For combination preparations (levodopa/carbidopa, levodopa/benserazide, or Stalevo®), enter only the levodopa component.<br><br><strong>Responsibility:</strong> The treating physician remains ultimately responsible for all clinical decisions at all times. This tool does not generate diagnoses and does not replace medical examination.',
                 'text-export-epd': 'Copy result',
                 'text-copy-clipboard': 'Copy to clipboard',
                 'text-copied': '✓ Copied to clipboard!',
@@ -1118,7 +1182,7 @@ D-DATS Score: ${score.toFixed(2)}
 ${lang === 'nl' ? 'Interpretatie' : 'Interpretation'}: ${score >= 5.8 ? 'Score ≥5.8 - ' : 'Score <5.8 - '}${interpretation}
 
 ${lang === 'nl' ? 'Gebaseerd op gevalideerde D-DATS tool (AUROC 0.93, cutoff 5.8)' : 'Based on validated D-DATS tool (AUROC 0.93, cutoff 5.8)'}
-${lang === 'nl' ? 'Externe validatie: 164 patiënten, sensitiviteit 81%, specificiteit 92%' : 'External validation: 164 patients, sensitivity 81%, specificity 92%'}`;
+${lang === 'nl' ? 'Externe validatie: 164 patiënten, sensitiviteit 88%, specificiteit 90%, PPV 61%' : 'External validation: 164 patients, sensitivity 88%, specificity 90%, PPV 61%'}`;
             
             document.getElementById('export-text').textContent = text;
         }
