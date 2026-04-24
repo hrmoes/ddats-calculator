@@ -552,16 +552,67 @@
             .medication-inputs {
                 grid-template-columns: 1fr;
             }
-            
+
             .radio-group {
                 flex-direction: column;
                 gap: 10px;
             }
         }
+
+        /* Independence notice (legal statement) */
+        #site-notice {
+            background: #FEF3C7;
+            border-bottom: 2px solid #F59E0B;
+            color: #78350F;
+            padding: 14px 16px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        #site-notice .notice-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            padding-right: 36px;
+        }
+        #site-notice .notice-title {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+        #site-notice #notice-close {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            line-height: 1;
+            cursor: pointer;
+            color: #78350F;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+        #site-notice #notice-close:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+        #site-notice #notice-close:focus-visible {
+            outline: 2px solid #F59E0B;
+            outline-offset: 2px;
+        }
+        @media print {
+            #site-notice { display: none; }
+        }
     </style>
 </head>
 
 <body>
+    <aside id="site-notice" role="region" aria-label="Mededeling inzake onafhankelijkheid">
+        <div class="notice-inner">
+            <strong class="notice-title text-notice-title">Mededeling inzake onafhankelijkheid</strong>
+            <span class="text-notice-body">D-DATS is een onafhankelijk, academisch ontwikkeld screeningsinstrument. Het intellectueel eigendom berust bij de onderzoekers (CC BY-NC-ND 4.0). Commercieel gebruik is niet toegestaan. Wij zijn er recent op geattendeerd dat D-DATS zonder onze toestemming is gebruikt in promotiemateriaal van derden. De onderzoekers hebben hiervoor geen toestemming verleend en zijn niet betrokken bij dit materiaal.</span>
+            <button type="button" id="notice-close" aria-label="Sluit mededeling">&times;</button>
+        </div>
+    </aside>
     <div class="container">
         <div class="header">
             <div class="language-toggle">
@@ -788,6 +839,8 @@
         
         const translations = {
             'nl': {
+                'text-notice-title': 'Mededeling inzake onafhankelijkheid',
+                'text-notice-body': 'D-DATS is een onafhankelijk, academisch ontwikkeld screeningsinstrument. Het intellectueel eigendom berust bij de onderzoekers (CC BY-NC-ND 4.0). Commercieel gebruik is niet toegestaan. Wij zijn er recent op geattendeerd dat D-DATS zonder onze toestemming is gebruikt in promotiemateriaal van derden. De onderzoekers hebben hiervoor geen toestemming verleend en zijn niet betrokken bij dit materiaal.',
                 'text-title': 'D-DATS Calculator',
                 'text-subtitle': 'Dutch Device-Aided Therapy Screening Tool',
                 'text-validation': 'Externe validatie: AUROC 0.93 • Cutoff: 5.8',
@@ -823,6 +876,8 @@
                 'text-remove': 'Verwijder'
             },
             'en': {
+                'text-notice-title': 'Statement of Independence',
+                'text-notice-body': 'D-DATS is an independently developed academic screening tool. Intellectual property rights are held by the researchers (CC BY-NC-ND 4.0). Commercial use is not permitted. We have recently been made aware that D-DATS has been used in third-party promotional materials without our consent. The researchers have not authorized this use and are not involved in these materials.',
                 'text-title': 'D-DATS Calculator',
                 'text-subtitle': 'Dutch Device-Aided Therapy Screening Tool',
                 'text-validation': 'External validation: AUROC 0.93 • Cutoff: 5.8',
@@ -1197,6 +1252,26 @@ ${lang === 'nl' ? 'Externe validatie: 164 patiënten, sensitiviteit 88%, specifi
                 }, 3000);
             });
         }
+
+        // Independence notice — dismiss logic (session-scoped, version-aware)
+        (function initNotice() {
+            const NOTICE_VERSION = 'v1-2026-04-19';
+            const notice = document.getElementById('site-notice');
+            if (!notice) return;
+            if (sessionStorage.getItem('ddats-notice-dismissed') === NOTICE_VERSION) {
+                notice.style.display = 'none';
+                return;
+            }
+            const closeBtn = document.getElementById('notice-close');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function () {
+                    notice.style.display = 'none';
+                    try {
+                        sessionStorage.setItem('ddats-notice-dismissed', NOTICE_VERSION);
+                    } catch (e) { /* sessionStorage unavailable — fail silently */ }
+                });
+            }
+        })();
 
         // Initialize on page load
         calculateDDATS();
