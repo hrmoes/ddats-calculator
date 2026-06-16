@@ -87,9 +87,10 @@ Calculator uses Jost et al. (2023) conversion factors:
 |------------|--------|---------|
 | Levodopa IR | 1.0× | 100 mg → 100 LEDD |
 | Levodopa CR | 0.75× | 100 mg → 75 LEDD |
-| Pramipexole base | 100× | 1 mg → 100 LEDD |
-| Ropinirole | 33.3× | 6 mg → 200 LEDD |
-| Rotigotine | 25× | 8 mg → 200 LEDD |
+| Pramipexole (salt/diHCl) | 100× | 1.5 mg → 150 LEDD |
+| Pramipexole (base) | 142.86× | 1.05 mg → 150 LEDD |
+| Ropinirole | 20× | 6 mg → 120 LEDD |
+| Rotigotine | 30× | 8 mg → 240 LEDD |
 
 Full conversion table available in calculator interface.
 
