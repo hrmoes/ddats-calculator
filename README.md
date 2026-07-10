@@ -22,8 +22,8 @@ Bilingual interface (Dutch/English) with integrated LEDD calculator.
 **External validation in Dutch secondary care cohort:**
 - Sample: 164 consecutive Parkinson patients, 4 hospitals
 - Reference standard: Expert panel of 5 Dutch movement disorder specialists
-- **AUROC: 0.93** (95% CI: 0.89-0.96)
-- **Sensitivity: 88%** | **Specificity: 90%** | **PPV: 61%** (at cutoff 5.8)
+- **AUROC: 0.94** (95% CI: 0.91-0.97)
+- **Sensitivity: 92%** | **Specificity: 90%** | **PPV: 62%** (at cutoff 5.8)
 
 
 **Citation:**  
